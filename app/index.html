@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Techno form</title>
+	<link rel="stylesheet" type="text/css" href="css/main.min.css" />
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+</head>
+<body>
+
+	<div class="auth-wrap">
+
+	<!-- auth-container -->
+		<div class="auth-container">
+
+			<div class="auth-close">
+				<img class="auth-close__img" src="img/close.png" alt="close" />
+			</div>
+
+			<div class="auth-avatar">
+				<img class="auth-avatar__img" src="img/avatar.png" alt="avatar" />
+			</div>
+		
+		<!-- auth-form -->
+			<form class="auth-form" action="#" method="get">
+				
+				<div class="auth-form__email">
+					<input type="email" name="email" maxlength="50" pattern="[\w.]+@[\w.]+\.[a-z]{2,3}" required />
+				</div>
+				
+				<div class="auth-form__password">
+					<input type="password" name="password" maxlength="50" pattern="[\w]{5,}" required />
+				</div>
+
+				<a href="#" class="auth-form__forgot">
+					<div>Forgot your password?</div>
+				</a>
+
+			<!-- auth-controls -->
+				<div class="auth-controls">
+					<div class="auth-controls__remember">
+						<label>
+							<input type="checkbox" name="remember" value="true" />
+							<span>Remember?</span>
+						</label>
+					</div>
+					<input class="auth-controls__sign-in" type="submit" value="Sign In">
+				</div>
+			</form>
+
+			<div class="sign-up">Not a registered user yet?  <a class="sign-up__link" href="#">Sign up now!</a></div>
+		</div> <!-- END / auth-container -->
+	</div>
+</body>
+</html>
